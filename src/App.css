@@ -17,17 +17,12 @@
     flex-direction: column;
     font-size: calc(22px + 2vmin);
     color: #0A0A0A;
-    padding-left: 16px;
+    padding: 20px 15px;
 }
 
 .App-Filter-heading {
     text-align: center !important;
     margin-top: 1rem;
-}
-
-.App-Filter-heading-launch-year {
-    text-align: center !important;
-    margin-top: -1rem;
 }
 
 .App-Filter-button-container {
@@ -38,46 +33,9 @@
     flex-wrap: wrap;
 }
 
-.App-Filter-button {
-    flex: 0 40%;
-    margin: 10px;
-}
-
-.App-Card {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    min-width: 0;
-    word-wrap: break-word;
-    background-color: #fff;
-    background-clip: border-box;
-    border: 1px solid rgba(0,0,0,.125);
-    border-radius: .25rem;
-}
-.App-Card-body {
-    flex: 1 1 auto;
-    min-height: 1px;
-    padding: 1.25rem;
-}
-
-/* here */
-
 .App-Card-container {
     background-color: #fff;
     padding: 10px;
-}
-
-.App-Container-fluid {
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-.App-Row {
-    display: flex;
-    flex-wrap: wrap;
 }
 
 .App-Hr {
@@ -112,4 +70,10 @@
 .App-filter-button[variant="outline-success"] {
     color: #28a745;
     border-color: #28a745;
+    background-color: #e5f4e8;
+}
+
+.App-Footer-Note {
+    text-align: center;
+    margin: 40px 0 20px;
 }

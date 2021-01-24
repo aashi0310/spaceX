@@ -28,24 +28,24 @@ function RocketLaunchDetails({ details }) {
           {mission_name} #{flight_number}
         </div>
         <div className="Rocket-detail-label">
-          Mission Ids:{" "}
-          <ul>
-            {" "}
+          Mission Ids:
+          {mission_id.length > 0 ? <ul>
             <li className="Rocket-detail-value">{mission_id}</li>
-          </ul>
+          </ul> : <span className="Rocket-detail-value">No Data</span>}
+          
         </div>
         <div className="Rocket-detail-label">
-          Launch Year:{" "}
+          Launch Year:
           <span className="Rocket-detail-value">{launch_year}</span>
         </div>
         <div className="Rocket-detail-label">
-          Successful Launch:{" "}
+          Successful Launch:
           <span className="Rocket-detail-value">
             {launch_success ? "true" : "false"}
           </span>
         </div>
         <div className="Rocket-detail-label">
-          Successful Landing:{" "}
+          Successful Landing:
           <span className="Rocket-detail-value">
             {land_success ? "true" : "false"}
           </span>
