@@ -1,13 +1,126 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #ebebeb;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Common CSS */
+
+.Text-center {
+    text-align: center;
+}
+
+
+.App-Container-fluid {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.App-Row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.App-Header {
+    padding: 20px 0;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+}
+
+
+.App-Column-left {
+    flex: 0 0 92%;
+    max-width: 100%;
+}
+
+.App-Column-right {
+    flex: 0 0 92%;
+    max-width: 100%;
+}
+
+.App-Column {
+    width: 24%;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+@media (min-width: 992px){
+    .App-Column-left {
+        flex: 0 0 23%;
+        max-width: 23%;
+        margin-right: 10px;
+    }
+
+    .App-Column-right {
+        flex: 0 0 73%;
+        max-width: 73%;
+    }
+}
+@media (min-width: 768px){
+    .App-Column-left {
+        flex: 0 0 47%;
+        max-width: 50%;
+        margin-right: 10px;
+    }
+
+    .App-Column-right {
+        flex: 0 0 47%;
+        max-width: 50%;
+    }
+}
+@media (min-width: 576px){
+
+    .App-Column-left {
+        flex: 0 0 23%;
+        max-width: 23%;
+    }
+    
+    .App-Column-right {
+        flex: 0 0 73%;
+        max-width: 73%;
+    }
+}
+
+
+
+/* Reset css */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
 }

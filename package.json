@@ -6,6 +6,7 @@
         "@testing-library/jest-dom": "^5.11.9",
         "@testing-library/react": "^11.2.3",
         "@testing-library/user-event": "^12.6.2",
+        "enzyme-adapter-react-15": "^1.4.3",
         "react": "^17.0.1",
         "react-dom": "^17.0.1",
         "react-scripts": "4.0.1",
@@ -14,8 +15,12 @@
     "scripts": {
         "start": "react-scripts start",
         "build": "react-scripts build",
-        "test": "jest",
-        "eject": "react-scripts eject"
+        "test": "react-scripts test",
+        "eject": "react-scripts eject",
+        "dev": "npm-run-all --parallel dev:*",
+        "dev:server": "nodemon build/bundle.js --watch",
+        "dev:build:server": "webpack --config webpack.server.js --watch",
+        "dev:build:client": "webpack -- config webpack.client.js --watch"
     },
     "eslintConfig": {
         "extends": [
@@ -35,5 +40,9 @@
             "last 1 safari version"
         ]
     },
-    "devDependencies": {}
+    "devDependencies": {
+        "enzyme": "^3.11.0",
+        "enzyme-adapter-react-16": "^1.15.6",
+        "react-test-renderer": "^15.5.0"
+    }
 }
