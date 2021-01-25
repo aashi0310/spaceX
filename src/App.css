@@ -73,7 +73,15 @@
     background-color: #e5f4e8;
 }
 
+
+.App-NoRecord {
+    width: 100%;
+    text-align: center;
+    line-height: 50px;
+}
+
 .App-Footer-Note {
     text-align: center;
     margin: 40px 0 20px;
 }
+

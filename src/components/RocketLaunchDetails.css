@@ -1,16 +1,16 @@
 .Rocket-details-card {
-    width: 13rem;
+    width: 96%;
     padding: 20px 10px;
     margin-bottom: 15px;
-    min-height: 430px;
+    min-height: 455px;
 }
 
 .Rocket-image {
     background-color: #F2F2F2;
     display: block;
-    width: 208px;
-    height: 208px;
-    margin-bottom: 20px;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto 20px;
 }
 
 .Rocket-name-flight-number {
@@ -26,13 +26,26 @@
     color: #181818;
     font-size: 18px;
     font-weight: 500;
-    margin: 10px 0 0;
+    margin-bottom: 1rem;
 }
 
 .Rocket-detail-value {
     color: #63659f;
     font-weight: 400;
     margin-left: 5px;
+}
+
+/* Media Queries */
+@media (min-width: 1024px){
+    .Rocket-details-card {
+        width: 13rem;
+    }
+    
+}
+@media screen and (max-width: 1024px) and (min-width: 700px) {
+    .Rocket-details-card {
+        width: 13rem;
+    }
 }
 
 

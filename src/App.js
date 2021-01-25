@@ -205,13 +205,15 @@ class App extends Component {
 
               <div className="App-Column-right">
                 <div className="App-Row">
-                  {data.map((details) => {
+                  {data.length > 0 ?
+                  data.map((details) => {
                     return (
                       <div className="App-Column">
                         <RocketLaunchDetails details={details} />
                       </div>
                     );
-                  })}
+                  }) : <h3 className="App-NoRecord"> No Record Found </h3>} 
+                  {}
                 </div>
               </div>
             </div>
