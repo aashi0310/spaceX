@@ -69,19 +69,19 @@ body {
 }
 @media screen and (max-width: 1024px) and (min-width: 700px) {
     .App-Column-left {
-        flex: 0 0 35%;
-        max-width: 35%;
+        flex: 0 0 38%;
+        max-width: 38%;
         margin-right: 10px;
     }
 
     .App-Column-right {
-        flex: 0 0 63%;
-        max-width: 63%;
+        flex: 0 0 60%;
+        max-width: 60%;
         padding-top: 0;
     }
 
     .App-Column {
-        width: auto;
+        width: 100%;
     }
 }
 
